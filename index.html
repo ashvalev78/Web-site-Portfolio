@@ -1,119 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My website</title>
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  <body class="light-theme">
-    <nav class="navbar">
-      <div class="navbar_container">
-        <button class="navbar_btn">Dark</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My website</title>
+  <link rel="stylesheet" href="main.css" />
+  <script src="./part.js"></script>
+
+  <script>
+    const a = function(){
+        particlesJS.load('particles-js','particles-conf.json');  
+    };
+
+    a();
+
+    window.pJSDom[0].pJS.particles.number.value = 200;
+      window.pJSDom[0].pJS.particles.color.value = "#dccaff"; 
+      window.pJSDom[0].pJS.tmp.obj.size_value = 80;   
+
+      window.pJSDom[0].pJS.fn.particlesRefresh();
+</script>
+</head>
+
+<body class="light-theme">
+  <div id="particles-js"></div>
+    <div class="count-particles">
+      <span class="js-count-particles">--</span> particles  
+    </div>
+    
+  <nav class="navbar">
+    <div class="navbar_container">
+      <button class="navbar_btn">Dark</button>
+    </div>
+  </nav>
+  <section class="introduction">   
+    <div class="introduction_wrapper">
+      <h1 class="introduction_title">Junior Front-end Developer</h1>
+      <h2 class="introduction_subtitle">Welcome to my portfolio site</h2>
+      <img class="introduction_avatar" src="src/avatar.svg" />
+    </div>
+    <div class="introdaction_footer">
+      <div class="introduction_footer_container">
+        <img class="introduction_footer_img" src="src/hero.svg" />
       </div>
-    </nav>
-    <section class="introduction">
-      <div class="introduction_wrapper">
-        <h1 class="introduction_title">Junior Front-end Developer</h1>
-        <h2 class="introduction_subtitle">Welcome to my portfolio site</h2>
-        <img class="introduction_avatar" src="src/avatar.svg" />
-      </div>
-      <div class="introdaction_footer">
-        <div class="introduction_footer_container">
-          <img class="introduction_footer_img" src="src/hero.svg" />
+    </div>
+    <script src="app.js"></script>
+  </section>
+  <section class="aboutMe">
+    <div class="aboutMe_container">
+      <div class="aboutMe_block">
+        <div class="aboutMe_text">
+          <h1 class="aboutMe_title">Hi, I'm Jane. Nice to meet you</h1>
+          <h2 class="aboutMe_subtitle">
+            I started my programming journey a long time ago, when I was in high school. I started to actively get
+            involved in programming about 1.5 years ago. For a long time I was looking for myself in different
+            directions, among them was Gamedev (I wrote games on Unity), and also tried different programming languages.
+            Among them were: Dart, JS, Python, C#. But in the end, the Web Front-end turned out to be the closest in
+            spirit.
+          </h2>
         </div>
       </div>
-      <script src="app.js"></script>
-    </section>
-    <section class="aboutMe">
-      <div class="aboutMe_container">
-        <div class="aboutMe_block">
-          <div class="aboutMe_text">
-            <h1 class="aboutMe_title">Hi, I'm Jane. Nice to meet you</h1>
-            <h2 class="aboutMe_subtitle">
-              I started my programming journey a long time ago, when I was in high school. I started to actively get involved in programming about 1.5 years ago. For a long time I was looking for myself in different directions, among them was Gamedev (I wrote games on Unity), and also tried different programming languages. Among them were: Dart, JS, Python, C#. But in the end, the Web Front-end turned out to be the closest in spirit.
-            </h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="skills">
-      <div class="skills_container">
-        <div class="skills_box">
-          <div class="skills_content">
-            <img class="skills_img" src="src/frontend.svg" />
-            <h1 class="skills_title">Skills</h1>
-            <p class="skills_subtitle">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-            <div class="skills_details">
-                <span class="chart_title">HTML 40%</span>
-                <div class="chart">
-                    <div class="chart_footer">
-                        <div class="chart_percent_html"></div>
-                    </div>
-                </div>
-                <span class="chart_title">CSS 50%</span>
-                <div class="chart">
-                    <div class="chart_footer">
-                        <div class="chart_percent_css"></div>
-                    </div>
-                </div>
-                <span class="chart_title">JavaScript 30%</span>
-                <div class="chart">
-                    <div class="chart_footer">
-                        <div class="chart_percent_js"></div>
-                    </div>
-                </div>
-                <span class="chart_title">Learnability 100%</span>
-                <div class="chart">
-                    <div class="chart_footer">
-                        <div class="chart_percent_la"></div>
-                    </div>
-                </div>
+    </div>
+  </section>
+  <section class="skills">
+    <div class="skills_container">
+      <div class="skills_box">
+        <div class="skills_content">
+          <img class="skills_img" src="src/frontend.svg" />
+          <h1 class="skills_title">Skills</h1>
+          <p class="skills_subtitle">I like to code things from scratch, and enjoy bringing ideas to life in the
+            browser.</p>
+          <div class="skills_details">
+            <span class="chart_title">HTML 40%</span>
+            <div class="chart">
+              <div class="chart_footer">
+                <div class="chart_percent_html"></div>
+              </div>
+            </div>
+            <span class="chart_title">CSS 50%</span>
+            <div class="chart">
+              <div class="chart_footer">
+                <div class="chart_percent_css"></div>
+              </div>
+            </div>
+            <span class="chart_title">JavaScript 30%</span>
+            <div class="chart">
+              <div class="chart_footer">
+                <div class="chart_percent_js"></div>
+              </div>
+            </div>
+            <span class="chart_title">Learnability 100%</span>
+            <div class="chart">
+              <div class="chart_footer">
+                <div class="chart_percent_la"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="myWorks">
-      <div class="myWorks_container">
-        <h1 class="myWorks_title">My Recent Work</h1>
-        <h2 class="myWorks_subtitle">
-          Here are a few pet-projects I've worked on recently.
-        </h2>
-        <div class="myWorks_grid">
-          <div class="myWork">
-            <img class="myWork_img" src="src/ChuckNorris.jpg" />
-            <div class="myWork_background">
-              <h1 class="myWork_title">Chuck Norris Jokes pet-project</h1>
-              <a
-                class="myWork_button"
-                href="https://github.com/Evpatoriy/chuck-jokes"
-                target="blank"
-              >
-                <span>Visit Website</span>
-                <span class="myWork_button_icon"></span>
-              </a>
-            </div>
-            <div class="myWork_overlay"></div>
+    </div>
+  </section>
+  <section class="myWorks">
+    <div class="myWorks_container">
+      <h1 class="myWorks_title">My Recent Work</h1>
+      <h2 class="myWorks_subtitle">
+        Here are a few pet-projects I've worked on recently.
+      </h2>
+      <div class="myWorks_grid">
+        <div class="myWork">
+          <img class="myWork_img" src="src/ChuckNorris.jpg" />
+          <div class="myWork_background">
+            <h1 class="myWork_title">Chuck Norris Jokes pet-project</h1>
+            <a class="myWork_button" href="https://github.com/Evpatoriy/chuck-jokes" target="blank">
+              <span>Visit Website</span>
+              <span class="myWork_button_icon"></span>
+            </a>
           </div>
-          <div class="myWork">
-            <img class="myWork_img" src="src/chat-bubbles.jpg" />
-            <div class="myWork_background">
-              <h1 class="myWork_title">Chat pet-project</h1>
-              <a
-                class="myWork_button"
-                href="https://github.com/Evpatoriy/Chat"
-                target="blank"
-              >
-                <span>Visit Website</span>
-                <span class="myWork_button_icon"></span>
-              </a>
-            </div>
-            <div class="myWork_overlay"></div>
+          <div class="myWork_overlay"></div>
+        </div>
+        <div class="myWork">
+          <img class="myWork_img" src="src/chat-bubbles.jpg" />
+          <div class="myWork_background">
+            <h1 class="myWork_title">Chat pet-project</h1>
+            <a class="myWork_button" href="https://github.com/Evpatoriy/Chat" target="blank">
+              <span>Visit Website</span>
+              <span class="myWork_button_icon"></span>
+            </a>
           </div>
+          <div class="myWork_overlay"></div>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+</body>
+
 </html>
